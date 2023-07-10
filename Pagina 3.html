@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recuperacao de Senha</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-image: url(a.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #555;
+    }
+
+    .login-link {
+      margin-top: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 150px;
+    }
+  </style>
+  <script>
+    function showConfirmation() {
+      alert("O link de redefinicao de senha foi enviado para seu e-mail");
+      window.location.href = "Pagina 1.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <img src="U.S. Robots.PNG" alt="Logo da empresa" class="logo">
+    <h1>Recuperação de Senha</h1>
+    <form onsubmit="event.preventDefault(); showConfirmation();">
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div>
+        <input type="submit" value="Redefinir a senha">
+      </div>
+    </form>
+    <div class="message"></div>
+    <a href="Pagina 1.html" class="login-link">Voltar para a página de login</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagina de Login</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-image: url(4krobot.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f8f8f8;
+    }
+
+    form div {
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #777;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #555;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 150px;
+    }
+  </style>
+  <script>
+    function redirectToPage2(event) {
+      event.preventDefault();
+      window.location.href = "Pagina 2.html";
+    }
+  </script>
+</head>
+<body>
+  <img src="U.S. Robots.PNG" alt="Logo da empresa" class="logo">
+  <h1 style="color: #777;">Login</h1>
+  <form onsubmit="redirectToPage2(event)">
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" required>
+    </div>
+    <div>
+      <label for="password">Senha: <a href="Pagina 3.html">esqueci minha senha</a></label>
+      <input type="password" id="password" required>
+    </div>
+    <div>
+      <input type="submit" value="Entrar">
+    </div>
+  </form>
+</body>
+</html>
